@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets — never commit these
+.env
+
+# Editor/OS junk
+.vscode/
+.DS_Store
+
+# Data we generate — this project produces its own data, we don't need to version it
+*.csv
+*.parquet
