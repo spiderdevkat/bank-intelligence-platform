@@ -5,19 +5,19 @@
 - [x] 0.2 Create project folder
 - [x] 0.3 .gitignore + first commit
 - [x] 0.4 Virtual environment
-- [ ] 0.5 Verify local Postgres + MongoDB, connect to both
-- [ ] 0.6 Install core Python dependencies
+- [x] 0.5 Verify local Postgres + MongoDB, connect to both
+- [x] 0.6 Install core Python dependencies
 
 ## Phase 1 — Python + Synthetic Data Generation
 - [x] 1.0 Install faker
-- [ ] 1.1 Data models (dataclasses, enums)
-- [ ] 1.2 Customer generator
-- [ ] 1.3 Account generator (hierarchies)
-- [ ] 1.4 Normal transaction generator
-- [ ] 1.5 Fraud pattern injectors (velocity, structuring, round-tripping)
-- [ ] 1.6 CLI entry script
-- [ ] 1.7 Unit tests
-- [ ] 1.8 Concurrency mini-lab (threading/multiprocessing/asyncio + GIL)
+- [x] 1.1 Data models (dataclasses, enums)
+- [x] 1.2 Customer generator
+- [x] 1.3 Account generator (hierarchies)
+- [x] 1.4 Normal transaction generator
+- [x] 1.5 Fraud pattern injectors (velocity, structuring, round-tripping)
+- [x] 1.6 CLI entry script
+- [x] 1.7 Unit tests
+- [x] 1.8 Concurrency mini-lab (threading/multiprocessing/asyncio + GIL)
 
 ## Phase 2 — Web Scraping + MongoDB
 - [ ] 2.1 Connect to MongoDB with pymongo
