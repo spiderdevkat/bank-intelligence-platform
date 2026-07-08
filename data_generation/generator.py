@@ -5,6 +5,10 @@ from faker import Faker
 
 from data_generation.models import Customer, RiskTier, Account, AccountStatus, AccountType
 
+from datetime import datetime, timedelta
+
+from data_generation.models import Transaction, TransactionChannel, TransactionType
+
 _fake = Faker()
 
 COUNTRIES = ["US", "GB", "DE", "IN", "SG", "AE"]
@@ -59,3 +63,30 @@ def generate_accounts(customers, accounts_per_customer=(1, 2)):
             )
             all_account_ids.append(account.account_id)
             yield account
+
+
+def generate_normal_transactions(accounts, n, start_date=None, end_date=None):
+    start_date = start_date or datetime.now() - timedelta(days=180)
+    end_date = end_date or datetime.now()
+    span_seconds = int((end_date - start_date).total_seconds())
+
+    for _ in range(n):
+        account = random.choice(accounts)
+        counterparty = random.choice(accounts)
+        ts = start_date + timedelta(seconds=random.randint(0, span_seconds))
+        amount = round(random.lognormvariate(mu=4.0, sigma=1.1), 2)
+
+        yield Transaction.new(
+            customer_id=account.customer_id,
+            account_id=account.account_id,
+            counterparty_account_id=(
+                counterparty.account_id if counterparty.account_id != account.account_id else None
+            ),
+            transaction_type=random.choice(list(TransactionType)),
+            channel=random.choice(list(TransactionChannel)),
+            amount=amount,
+            currency=account.currency,
+            transaction_timestamp=ts,
+            is_fraud=False,
+            fraud_label=None,
+        )
