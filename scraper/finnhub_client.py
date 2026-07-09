@@ -27,11 +27,15 @@ def save_news_to_mongo(news_items, symbol: str):
     db = get_db()
     collection = db.raw_news
 
+    upserted_count = 0
     for item in news_items:
         item["symbol"] = symbol
         item["scraped_at"] = datetime.now()
-
-    if news_items:
-        result = collection.insert_many(news_items)
-        return len(result.inserted_ids)
-    return 0
+        result = collection.update_one(
+            {"id": item["id"]},
+            {"$set": item},
+            upsert=True,
+        )
+        if result.upserted_id or result.modified_count:
+            upserted_count += 1
+    return upserted_count

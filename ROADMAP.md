@@ -20,12 +20,12 @@
 - [x] 1.8 Concurrency mini-lab (threading/multiprocessing/asyncio + GIL)
 
 ## Phase 2 — Web Scraping + MongoDB
-- [ ] 2.1 Connect to MongoDB with pymongo
-- [ ] 2.2 SEC EDGAR scraper
-- [ ] 2.3 Finnhub API client (news)
-- [ ] 2.4 FRED API client (macro data)
-- [ ] 2.5 Frankfurter API client (FX rates)
-- [ ] 2.6 Land raw data into MongoDB
+- [x] 2.1 Connect to MongoDB with pymongo
+- [x] 2.2 SEC EDGAR scraper
+- [x] 2.3 Finnhub API client (news)
+- [x] 2.4 FRED API client (macro data)
+- [x] 2.5 Frankfurter API client (FX rates)
+- [x] 2.6 Land raw data into MongoDB
 
 ## Phase 3 — SQL Data Modeling
 - [ ] 3.1 Connect Python to Postgres

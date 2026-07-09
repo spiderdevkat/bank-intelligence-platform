@@ -59,11 +59,15 @@ def save_filings_to_mongo(filings, cik: str):
     db = get_db()
     collection = db.raw_sec_filings
 
+    upserted_count = 0
     for filing in filings:
         filing["cik"] = cik
         filing["scraped_at"] = datetime.now()
-
-    if filings:
-        result = collection.insert_many(filings)
-        return len(result.inserted_ids)
-    return 0
+        result = collection.update_one(
+            {"accession_number": filing["accession_number"]},
+            {"$set": filing},
+            upsert=True,
+        )
+        if result.upserted_id or result.modified_count:
+            upserted_count += 1
+    return upserted_count
