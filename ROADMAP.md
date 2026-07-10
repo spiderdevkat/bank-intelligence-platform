@@ -28,15 +28,15 @@
 - [x] 2.6 Land raw data into MongoDB
 
 ## Phase 3 — SQL Data Modeling
-- [ ] 3.1 Connect Python to Postgres
-- [ ] 3.2 Star schema design
-- [ ] 3.3 SCD Type 2 customer dimension
-- [ ] 3.4 Load data into Postgres
-- [ ] 3.5 Core SQL (SELECT/JOIN/GROUP BY)
-- [ ] 3.6 Window functions
-- [ ] 3.7 Recursive CTE
-- [ ] 3.8 Gaps-and-islands query
-- [ ] 3.9 Query tuning (EXPLAIN ANALYZE + indexes)
+- [x] 3.1 Connect Python to Postgres
+- [x] 3.2 Star schema design
+- [x] 3.3 SCD Type 2 customer dimension
+- [x] 3.4 Load data into Postgres
+- [x] 3.5 Core SQL (SELECT/JOIN/GROUP BY)
+- [x] 3.6 Window functions
+- [x] 3.7 Recursive CTE
+- [x] 3.8 Gaps-and-islands query
+- [x] 3.9 Query tuning (EXPLAIN ANALYZE + indexes)
 
 ## Phase 4 — Spark SQL
 - [ ] 4.1 PySpark local session
