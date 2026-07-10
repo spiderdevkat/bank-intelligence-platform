@@ -39,11 +39,11 @@
 - [x] 3.9 Query tuning (EXPLAIN ANALYZE + indexes)
 
 ## Phase 4 — Spark SQL
-- [ ] 4.1 PySpark local session
-- [ ] 4.2 Load Postgres data into Spark
-- [ ] 4.3 Rewrite SQL as Spark SQL
-- [ ] 4.4 Skew simulation + salting/broadcast
-- [ ] 4.5 Gold layer job
+- [x] 4.1 PySpark local session
+- [x] 4.2 Load Postgres data into Spark
+- [x] 4.3 Rewrite SQL as Spark SQL
+- [x] 4.4 Skew simulation + salting/broadcast
+- [x] 4.5 Gold layer job
 
 ## Phase 5 — Statistics + Classical ML
 - [ ] 5.1 Hypothesis testing (t-test)

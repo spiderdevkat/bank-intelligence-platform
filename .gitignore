@@ -14,3 +14,5 @@ venv/
 # Data we generate — this project produces its own data, we don't need to version it
 *.csv
 *.parquet
+
+spark_jobs/output
