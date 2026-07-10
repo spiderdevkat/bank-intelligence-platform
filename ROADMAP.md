@@ -46,13 +46,13 @@
 - [x] 4.5 Gold layer job
 
 ## Phase 5 — Statistics + Classical ML
-- [ ] 5.1 Hypothesis testing (t-test)
-- [ ] 5.2 Chi-square test
-- [ ] 5.3 Feature engineering
-- [ ] 5.4 Regression
-- [ ] 5.5 KNN
-- [ ] 5.6 KMeans clustering
-- [ ] 5.7 Random Forest fraud classifier
+- [x] 5.1 Hypothesis testing (t-test)
+- [x] 5.2 Chi-square test
+- [x] 5.3 Feature engineering
+- [x] 5.4 Regression
+- [x] 5.5 KNN
+- [x] 5.6 KMeans clustering
+- [x] 5.7 Random Forest fraud classifier
 
 ## Phase 6 — GenAI
 - [ ] 6.1 Gemini API + prompt engineering
