@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+import joblib
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -64,4 +65,8 @@ if __name__ == "__main__":
 
     train_knn(X_train, X_test, y_train, y_test)
 
-    train_random_forest(X_train, X_test, y_train, y_test, features.columns)
+    rf_model = train_random_forest(X_train, X_test, y_train, y_test, features.columns)
+
+    Path("ml/models").mkdir(parents=True, exist_ok=True)
+    joblib.dump(rf_model, "ml/models/fraud_random_forest.joblib")
+    print("\nModel saved to ml/models/fraud_random_forest.joblib")

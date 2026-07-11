@@ -55,15 +55,15 @@
 - [x] 5.7 Random Forest fraud classifier
 
 ## Phase 6 — GenAI
-- [ ] 6.1 Gemini API + prompt engineering
-- [ ] 6.2 Text-to-SQL with guardrails
-- [ ] 6.3 LLM summary generator
+- [x] 6.1 Gemini API + prompt engineering
+- [x] 6.2 Text-to-SQL with guardrails
+- [x] 6.3 LLM summary generator
 
 ## Phase 7 — RAG + LangChain + Agentic AI
-- [ ] 7.1 Embeddings + vector store
-- [ ] 7.2 RAG pipeline
-- [ ] 7.3 LangChain rebuild
-- [ ] 7.4 Fraud Investigator Agent
+- [x] 7.1 Embeddings + vector store
+- [x] 7.2 RAG pipeline
+- [x] 7.3 LangChain rebuild
+- [x] 7.4 Fraud Investigator Agent
 
 ## Phase 8 — Tableau (final step)
 - [ ] 8.1 Connect Tableau to Postgres

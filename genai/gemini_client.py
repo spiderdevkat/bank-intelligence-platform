@@ -19,3 +19,10 @@ def ask(prompt: str) -> str:
         contents=prompt,
     )
     return response.text
+
+def embed(text: str) -> list[float]:
+    response = client.models.embed_content(
+        model="gemini-embedding-001",
+        contents=text,
+    )
+    return response.embeddings[0].values
