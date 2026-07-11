@@ -66,8 +66,8 @@
 - [x] 7.4 Fraud Investigator Agent
 
 ## Phase 8 — Tableau (final step)
-- [ ] 8.1 Connect Tableau to Postgres
-- [ ] 8.2 Build dashboards
+- [x] 8.1 Connect Tableau to Postgres
+- [x] 8.2 Build dashboards
 
 ## Phase 9 — Wrap-up
-- [ ] 9.1 Final docs/tests cleanup
+- [x] 9.1 Final docs/tests cleanup

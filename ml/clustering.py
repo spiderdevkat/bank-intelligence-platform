@@ -70,3 +70,6 @@ if __name__ == "__main__":
     find_elbow(X_scaled)
 
     df = fit_without_fraud_signal(df, k=4)
+
+    df.to_csv("data/customer_clusters.csv", index=False)
+    print("\nSaved cluster assignments to data/customer_clusters.csv")
